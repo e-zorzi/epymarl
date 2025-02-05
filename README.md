@@ -1,4 +1,18 @@
-# Extended Python MARL framework - EPyMARL
+# My readme
+
+To install create a conda environment and do
+
+```pip install -r requirements.txt```
+
+and
+
+```pip install -r env_requirements.txt```
+
+Then, to test the training with checkpointing run
+
+```python src/main.py --config=mappo --env-config=gymma with env_args.time_limit=50 env_args.key="lbforaging:Foraging-8x8-2p-3f-v3" common_reward=False save_model=True```
+
+## (ORIGINAL README) Extended Python MARL framework - EPyMARL
 
 EPyMARL is  an extension of [PyMARL](https://github.com/oxwhirl/pymarl), and includes
 - **New!** Support for training in environments with individual rewards for all agents (for all algorithms that support such settings)
